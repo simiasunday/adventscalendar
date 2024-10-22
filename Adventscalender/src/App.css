@@ -13,25 +13,22 @@ body {
 
 .header {
   width: 100vw;
-  text-align: center;
-  height: 500px;
-  top: 0px;
-  writing-mode:vertical-lr;
-  text-orientation: upright;
+  height: 150px;
   padding-left: 30px;
 }
 
 .header-title {
     font-size: 60px;
+    writing-mode:vertical-rl;
+    text-orientation:sideways;
+    rotate:calc(180deg);
 }
 
 .calendar{
   display: grid;
   grid-template-columns: repeat(6, 0fr);
   justify-content: center;
-  gap: 50px;
-  margin-top: -300px;
-  
+  gap: 50px; 
 }
 
 .door img {
