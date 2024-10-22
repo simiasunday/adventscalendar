@@ -13,7 +13,7 @@ export const Calendar = () => {
         <a href="" target="_blank" rel=""><div className="door"><img src="src/assets/8.png" alt="" /></div></a>
         <a href="" target="_blank" rel=""><div className="door"><img src="src/assets/9.png" alt="" /></div></a>
         <a href="" target="_blank" rel=""><div className="door"><img src="src/assets/10.png" alt="" /></div></a>
-        <a href="" target="_blank" rel=""><div className="door"><img src="src/assets/11.png" alt="" /></div></a>
+        <a href="" target="_blank" rel=""><div className="door"><img src="src/assets/29.png" alt="" /></div></a>
         <a href="" target="_blank" rel=""><div className="door"><img src="src/assets/12.png" alt="" /></div></a>
         <a href="" target="_blank" rel=""><div className="door"><img src="src/assets/13.png" alt="" /></div></a>
         <a href="" target="_blank" rel=""><div className="door"><img src="src/assets/14.png" alt="" /></div></a>
