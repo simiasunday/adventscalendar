@@ -18,10 +18,11 @@ body {
 }
 
 .header-title {
-    font-size: 60px;
+    font-size: 80px;
     writing-mode:vertical-rl;
     text-orientation:sideways;
     rotate:calc(180deg);
+    padding-bottom: 120px;
 }
 
 .calendar{
