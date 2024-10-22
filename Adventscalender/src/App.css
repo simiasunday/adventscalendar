@@ -12,26 +12,17 @@ body {
 }
 
 .header {
-width: 100vw;
-text-align: center;
-height: 500px;
-top: 0px;
+  width: 100vw;
+  text-align: center;
+  height: 500px;
+  top: 0px;
+  writing-mode:vertical-lr;
+  text-orientation: upright;
+  padding-left: 30px;
 }
 
 .header-title {
-    font-size: 100px;
-}
-
-.header-menue {
-    display: flex;
-}
-
-.header-menue-list {
-    list-style: none;
-}
-
-.header-menue-item {
-    display: inline-block;
+    font-size: 60px;
 }
 
 .calendar{
