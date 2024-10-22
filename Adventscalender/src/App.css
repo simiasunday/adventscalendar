@@ -6,9 +6,9 @@
 
 body {
   background-image: url(./assets/Snowflakes2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-
+  min-height: 100vh;
+  min-width: 100vw;
+  background-size: 100% 100%;
 }
 
 .header {
@@ -34,3 +34,13 @@ top: 0px;
     display: inline-block;
 }
 
+.calendar{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0;
+}
+
+.door img {
+  width: 200px;
+  height: 200px;
+}
