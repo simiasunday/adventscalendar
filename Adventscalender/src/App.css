@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url(./assets/Snowflakes2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
 .header {
 width: 100vw;
 text-align: center;
