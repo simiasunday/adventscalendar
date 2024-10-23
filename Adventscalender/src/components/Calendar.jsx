@@ -7,9 +7,14 @@ export const Calendar = () => {
 
     
     const handleFlip = (index) => {
-        const newFlippedDoors = [...flippedDoors];
+        const today = new Date();
+        const dayOfMonth = today.getDate();
+        if (true) {
+            const newFlippedDoors = [...flippedDoors];
         newFlippedDoors[index] = !newFlippedDoors[index];
         setFlippedDoors(newFlippedDoors);
+        }
+       
     };
 
     return (
@@ -24,64 +29,63 @@ export const Calendar = () => {
             <a onClick={(e) => { e.preventDefault(); handleFlip(1); }}>
                 <div className={`door ${flippedDoors[1] ? 'flipped' : ''}`}>
                     <img src="src/assets/2.png" alt="" />
-                    <div className="door-number">1</div>
+                    <div className="door-number">2</div>
                     <div className="back green">Überraschung!</div>
                 </div>
             </a>
             <a onClick={(e) => { e.preventDefault(); handleFlip(2); }}>
                 <div className={`door ${flippedDoors[2] ? 'flipped' : ''}`}>
                     <img src="src/assets/6.png" alt="" />
-                    <div className="door-number">1</div>
+                    <div className="door-number">3</div>
                     <div className="back red">Überraschung!</div>
                 </div>
             </a>
             <a onClick={(e) => { e.preventDefault(); handleFlip(3); }}>
                 <div className={`door ${flippedDoors[3] ? 'flipped' : ''}`}>
                     <img src="src/assets/4.png" alt="" />
-                    <div className="door-number">1</div>
-                    <div className="door-number">1</div>
+                    <div className="door-number">4</div>
                     <div className="back green">Überraschung!</div>
                 </div>
             </a>
             <a onClick={(e) => { e.preventDefault(); handleFlip(4); }}>
                 <div className={`door ${flippedDoors[4] ? 'flipped' : ''}`}>
                     <img src="src/assets/5.png" alt="" />
-                    <div className="door-number">1</div>
+                    <div className="door-number">5</div>
                     <div className="back red">Überraschung!</div>
                 </div>
             </a>
             <a onClick={(e) => { e.preventDefault(); handleFlip(5); }}>
                 <div className={`door ${flippedDoors[5] ? 'flipped' : ''}`}>
                     <img src="src/assets/3.png" alt="" />
-                    <div className="door-number">1</div>
+                    <div className="door-number">6</div>
                     <div className="back green">Überraschung!</div>
                 </div>
             </a>
             <a onClick={(e) => { e.preventDefault(); handleFlip(6); }}>
                 <div className={`door ${flippedDoors[6] ? 'flipped' : ''}`}>
                     <img src="src/assets/7.png" alt="" />
-                    <div className="door-number">1</div>
+                    <div className="door-number">7</div>
                     <div className="back red">Überraschung!</div>
                 </div>
             </a>
             <a onClick={(e) => { e.preventDefault(); handleFlip(7); }}>
                 <div className={`door ${flippedDoors[7] ? 'flipped' : ''}`}>
                     <img src="src/assets/8.png" alt="" />
-                    <div className="door-number">1</div>
+                    <div className="door-number">8</div>
                     <div className="back red">Überraschung!</div>
                 </div>
             </a>
             <a onClick={(e) => { e.preventDefault(); handleFlip(8); }}>
                 <div className={`door ${flippedDoors[8] ? 'flipped' : ''}`}>
                     <img src="src/assets/9.png" alt="" />
-                    <div className="door-number">1</div>
+                    <div className="door-number">9</div>
                     <div className="back red">Überraschung!</div>
                 </div>
             </a>
             <a onClick={(e) => { e.preventDefault(); handleFlip(9); }}>
                 <div className={`door ${flippedDoors[9] ? 'flipped' : ''}`}>
                     <img src="src/assets/10.png" alt="" />
-                    <div className="door-number">1</div>
+                    <div className="door-number">10</div>
                     <div className="back red">Überraschung!</div>
                 </div>
             </a>
