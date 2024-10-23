@@ -9,7 +9,7 @@ export const Calendar = () => {
     const handleFlip = (index) => {
         const today = new Date();
         const dayOfMonth = today.getDate();
-        if (true) {
+        if (dayOfMonth >= index +1) {
             const newFlippedDoors = [...flippedDoors];
         newFlippedDoors[index] = !newFlippedDoors[index];
         setFlippedDoors(newFlippedDoors);
@@ -92,7 +92,7 @@ export const Calendar = () => {
             <a onClick={(e) => { e.preventDefault(); handleFlip(10); }}>
                 <div className={`door ${flippedDoors[10] ? 'flipped' : ''}`}>
                     <img src="src/assets/29.png" alt="" />
-                    <div className="door-number">1</div>
+                    <div className="door-number">11</div>
                     <div className="back red">Überraschung!</div>
                 </div>
             </a>
@@ -105,9 +105,9 @@ export const Calendar = () => {
             </a>
             <a onClick={(e) => { e.preventDefault(); handleFlip(12); }}>
                 <div className={`door ${flippedDoors[12] ? 'flipped' : ''}`}>
-                    <img src="src/assets/13.png" alt="" />
+                    <img src="src/assets/25.png" alt="" />
                     <div className="door-number">1</div>
-                    <div className="back red">Überraschung!</div>
+                    <div className="back green">Überraschung!</div>
                 </div>
             </a>
             <a onClick={(e) => { e.preventDefault(); handleFlip(13); }}>
