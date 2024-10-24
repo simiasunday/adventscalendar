@@ -18,20 +18,18 @@ export const Calendar = () => {
 
   const doors = [
     0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-    21, 22, 23,
-  ];
+    21, 22, 23];
 
-  return  <>
+  return ( <>
     {doors.map((door) => <div className="calendar">
       <a
-        onClick={(e) => {
-          e.preventDefault();
-          handleFlip(0);
+        onClick={(e) => {e.preventDefault();
+          handleFlip(door);
         }}
       >
-        <div className={`door ${flippedDoors[0] ? "flipped" : ""}`}>
-          <img src="src/assets/1.png" alt="" />
-          <div className="door-number">1</div>
+        <div className={`door ${flippedDoors[door] ? "flipped" : ""}`}>
+          <img src={`src/assets/${door + 1}.png`} alt="" />
+          <div className="door-number">{door + 1}</div>
           <a href="">
             <div className="back red">open</div>
           </a>
@@ -39,10 +37,8 @@ export const Calendar = () => {
       </a>
     </div>
     )}
-
-    
     </>
-};
+)};
 
 {
   /* 
