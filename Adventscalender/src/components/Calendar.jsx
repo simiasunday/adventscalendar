@@ -31,7 +31,7 @@ export const Calendar = () => {
           <img src={`src/assets/${door + 1}.png`} alt="" />
           <div className="door-number">{door + 1}</div>
           <a href="">
-            <div className="back red">open</div>
+            <div className="back">open</div>
           </a>
         </div>
       </a>
